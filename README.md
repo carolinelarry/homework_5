@@ -1,4 +1,4 @@
-## Part 1: OpenWeatheMap API
+## Part 1: OpenWeatherMap API
 
 Using the OpenWeatherMap API, I first created a series of scatter plots to showcase the following relationships:
 
