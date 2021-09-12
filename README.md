@@ -29,3 +29,7 @@ Then I ran linear regression on each relationship. This time, I separated the pl
 - I then plotted the hotels on top of the humidity heatmap with each pin containing the Hotel Name, City, and Country
 
 <img width="862" alt="Screen Shot 2021-08-30 at 2 34 40 PM" src="https://user-images.githubusercontent.com/79863465/131394869-f6260c4b-a842-4969-9d07-23956e035a7f.png">
+
+
+## Contact
+Email: cgrace1011@gmail.com
