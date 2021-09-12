@@ -1,35 +1,39 @@
-## Part 1: OpenWeatherMap API
+# Matplotlib - The Power of Plots
 
-Using the OpenWeatherMap API, I first created a series of scatter plots to showcase the following relationships:
+In this study, 249 mice identified with SCC tumor growth were treated through a variety of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens and provide a top-level summary of the study results.
 
-- Temperature (F) vs. Latitude
-- Humidity (%) vs. Latitude
-- Cloudiness (%) vs. Latitude
-- Wind Speed (mph) vs. Latitude
+## Process
 
-Then I ran linear regression on each relationship. This time, I separated the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+* Checked the data for any mouse ID with duplicate time points and removed any data associated with that mouse ID.
 
-- Northern Hemisphere - Temperature (F) vs. Latitude
-- Southern Hemisphere - Temperature (F) vs. Latitude
-- Northern Hemisphere - Humidity (%) vs. Latitude
-- Southern Hemisphere - Humidity (%) vs. Latitude
-- Northern Hemisphere - Cloudiness (%) vs. Latitude
-- Southern Hemisphere - Cloudiness (%) vs. Latitude
-- Northern Hemisphere - Wind Speed (mph) vs. Latitude
-- Southern Hemisphere - Wind Speed (mph) vs. Latitude
+* Used the cleaned data for the remaining steps:
 
-## Part 2: Google Places API
+* Generated a summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
 
-- In this part we created a heat map that displayed the humidity for every city from Part 1.
+* Generated a bar plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows the total number of measurements taken for each treatment regimen throughout the course of the study.
 
-- I then narrowed down the DataFrame to find your ideal weather condition. I dropped all rows that didn't contain all three conditions I desired. You want to be sure the weather is ideal.
+* Generated a pie plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows the distribution of female or male mice in the study.
 
-- Using Google Places API, I found the first hotel for each city located within 5000 meters of your coordinates
+* Calculated the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. Calculated the quartiles and IQR and quantitatively determined if there were any potential outliers across all four treatment regimens.
 
-- I then plotted the hotels on top of the humidity heatmap with each pin containing the Hotel Name, City, and Country
+* Using Matplotlib, generated a box and whisker plot of the final tumor volume for all four treatment regimens and highlighted any potential outliers in the plot by changing their color and style.
 
-<img width="862" alt="Screen Shot 2021-08-30 at 2 34 40 PM" src="https://user-images.githubusercontent.com/79863465/131394869-f6260c4b-a842-4969-9d07-23956e035a7f.png">
+* Selected a mouse that was treated with Capomulin and generated a line plot of tumor volume vs. time point for that mouse.
+
+* Generated a scatter plot of tumor volume versus mouse weight for the Capomulin treatment regimen.
+
+* Calculated the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plotted the linear regression model on top of the previous scatter plot.
 
 
 ## Contact
 Email: cgrace1011@gmail.com
+
+- - -
+
+## References
+
+Mockaroo, LLC. (2021). Realistic Data Generator. [https://www.mockaroo.com/](https://www.mockaroo.com/)
+
+- - -
+
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
